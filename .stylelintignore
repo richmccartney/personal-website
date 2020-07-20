@@ -1,0 +1,7 @@
+**/.next/**  
+**/build/**
+**/dist/**
+**/examples/**
+**/vendor/**
+**/_inlined/**
+**/node_modules/**
