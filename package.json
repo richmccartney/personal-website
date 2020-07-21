@@ -28,7 +28,8 @@
     "*.@(ts|tsx)": [
       "yarn lint.js",
       "yarn lint.styles",
-      "yarn format.js"
+      "yarn format.js",
+      "yarn format.styles"
     ]
   },
   "dependencies": {
