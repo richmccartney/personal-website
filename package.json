@@ -16,12 +16,12 @@
     "lint.js": "eslint . --ext ts --ext tsx --ext js",
     "lint.styles": "stylelint '**/*.{css,scss}' --report-needless-disables --report-invalid-scope-disables",
     "test": "jest",
-    "test-all": "yarn lint.js && yarn type-check && yarn test"
+    "test-all": "yarn lint.js && yarn type && yarn test"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn run type-check"
+      "pre-push": "yarn run type"
     }
   },
   "lint-staged": {
