@@ -41,7 +41,15 @@ type ButtonProps = {
 }
 
 /**
- * Button functional component
+ * Button component.
+ *
+ * @component
+ * @example
+ * const type = 'submit'
+ * const tabIndex = 0
+ * return (
+ *   <Button type={type} tabIndex={tabIndex}>Submit</Button>
+ * )
  */
 const Button: FunctionComponent<ButtonProps> = forwardRef(function Button(
   {

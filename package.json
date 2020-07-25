@@ -7,21 +7,21 @@
   "author": "Richard McCartney <richard@mccartney.io>",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "type": "tsc --pretty --noEmit",
+    "start.dev": "next dev",
+    "build": "next build",
     "format.js": "prettier --write \"**/*.{js,ts,tsx}\"",
     "format.styles": "yarn lint.styles --fix",
     "lint.js": "eslint . --ext ts --ext tsx --ext js",
     "lint.styles": "stylelint '**/*.{css,scss}' --report-needless-disables --report-invalid-scope-disables",
+    "lint.type": "tsc --pretty --noEmit",
     "test": "jest",
-    "test-all": "yarn lint.js && yarn type && yarn test"
+    "test.all": "yarn lint.js && yarn lint.type && yarn test"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn run type"
+      "pre-push": "yarn run lint.type"
     }
   },
   "lint-staged": {
@@ -33,6 +33,7 @@
     ]
   },
   "dependencies": {
+    "generate-react-doc": "^1.0.2",
     "next": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
@@ -62,8 +63,10 @@
     "jest-watch-typeahead": "^0.5.0",
     "lint-staged": "^10.0.10",
     "modern-css-reset": "^1.1.0",
+    "path": "^0.12.7",
     "prettier": "^2.0.2",
     "react-test-renderer": "^16.13.1",
+    "recompose": "^0.30.0",
     "stylelint": "^13.6.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",

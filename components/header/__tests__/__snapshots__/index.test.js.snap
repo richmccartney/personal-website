@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header: renders snapshot as expected 1`] = `
+<header
+  className="css-dhve4b"
+>
+  <a
+    className="css-kl9a67"
+    href="/"
+  >
+    Richard McCartney
+  </a>
+</header>
+`;
