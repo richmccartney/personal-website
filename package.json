@@ -10,6 +10,8 @@
     "start": "next start",
     "start.dev": "next dev",
     "build": "next build",
+    "export": "next export",
+    "deploy": "yarn build && yarn export",
     "format.js": "prettier --write \"**/*.{js,ts,tsx}\"",
     "format.styles": "yarn lint.styles --fix",
     "lint.js": "eslint . --ext ts --ext tsx --ext js",
