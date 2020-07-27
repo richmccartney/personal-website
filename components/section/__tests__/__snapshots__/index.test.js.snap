@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`section: renders default snapshot as expected 1`] = `<section />`;

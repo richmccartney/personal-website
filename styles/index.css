@@ -24,6 +24,7 @@
   --rem-size-0-5: 0.5rem;
   --rem-size-0-75: 0.75rem;
   --rem-size-1: 1rem;
+  --rem-size-1-125: 1.125rem;
   --rem-size-1-25: 1.25rem;
   --rem-size-1-5: 1.5rem;
   --rem-size-1-75: 1.75rem;
@@ -36,18 +37,22 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   font-family: var(--font-family);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  width: 100%;
 }
 
 body {
   color: var(--color-charcoal);
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 article,
@@ -263,7 +268,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  margin: var(--px-size-32) 0;
+  margin: 0;
 }
 
 h1 {
@@ -282,12 +287,11 @@ h4 {
   font-size: var(--rem-size-1-25);
 }
 
-h5 {
-  font-size: var(--rem-size-1-25);
-}
-
+h5,
 h6 {
-  font-size: var(--rem-size-1);
+  color: var(--color-grey);
+  font-size: var(--rem-size-0-75);
+  text-transform: uppercase;
 }
 
 blockquote {
@@ -304,7 +308,9 @@ label {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.75;
+  font-size: var(--rem-size-1-125);
+  color: var(--color-dark-grey);
 }
 
 code,

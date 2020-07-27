@@ -1,3 +1,13 @@
 {
-  "extends": "stylelint-config-standard"
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-config-styled-components"
+  ],
+  "rules": {
+    "no-empty-source": null,
+    "declaration-empty-line-before": null,
+    "no-missing-end-of-source-newline": null,
+    "value-keyword-case": null
+  }
 }

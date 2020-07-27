@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Container: renders snapshot as expected 1`] = `
+exports[`Container: renders default snapshot as expected 1`] = `
 <div
-  className="css-1z08k44"
+  className="css-168wbq6"
+/>
+`;
+
+exports[`Container: renders fullWidth snapshot as expected 1`] = `
+<div
+  className="css-ldojlq"
 />
 `;

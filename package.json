@@ -13,7 +13,8 @@
     "format.js": "prettier --write \"**/*.{js,ts,tsx}\"",
     "format.styles": "yarn lint.styles --fix",
     "lint.js": "eslint . --ext ts --ext tsx --ext js",
-    "lint.styles": "stylelint '**/*.{css,scss}' --report-needless-disables --report-invalid-scope-disables",
+    "lint.styles": "stylelint '**/*.{ts, tsx}' --report-needless-disables --report-invalid-scope-disables",
+    "lint.css": "stylelint '**/*.{css, scss}' --report-needless-disables --report-invalid-scope-disables",
     "lint.type": "tsc --pretty --noEmit",
     "test": "jest",
     "test.all": "yarn lint.js && yarn lint.type && yarn test"
@@ -70,7 +71,9 @@
     "stylelint": "^13.6.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
     "stylelint-prettier": "^1.1.2",
+    "stylelint-processor-styled-components": "^1.10.0",
     "typescript": "^3.8.3"
   }
 }
