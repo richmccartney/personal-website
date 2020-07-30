@@ -23,6 +23,7 @@
   --rem-size-0-25: 0.25rem;
   --rem-size-0-5: 0.5rem;
   --rem-size-0-75: 0.75rem;
+  --rem-size-0-875: 0.875rem;
   --rem-size-1: 1rem;
   --rem-size-1-125: 1.125rem;
   --rem-size-1-25: 1.25rem;
@@ -272,21 +273,18 @@ h6 {
 }
 
 h1 {
-  font-size: var(--rem-size-3);
-}
-
-h2 {
-  font-size: var(--rem-size-2);
-}
-
-h3 {
   font-size: var(--rem-size-1-5);
 }
 
-h4 {
+h2 {
   font-size: var(--rem-size-1-25);
 }
 
+h3 {
+  font-size: var(--rem-size-0-875);
+}
+
+h4,
 h5,
 h6 {
   color: var(--color-grey);
@@ -342,4 +340,27 @@ pre > code {
   overflow: visible;
   overflow-x: auto;
   padding-bottom: var(--px-size-32);
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: var(--rem-size-3);
+  }
+  
+  h2 {
+    font-size: var(--rem-size-2);
+  }
+  
+  h3 {
+    font-size: var(--rem-size-1-5);
+  }
+  
+  h4 {
+    font-size: var(--rem-size-1-25);
+  }
+  
+  h5,
+  h6 {
+    font-size: var(--rem-size-0-75);
+  }
 }

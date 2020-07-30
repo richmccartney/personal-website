@@ -10,7 +10,7 @@ type LayoutProps = {
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr minmax(320px, 1440px) 1fr;
+  grid-template-columns: 1fr minmax(268px, 1440px) 1fr;
   gap: 0 var(--px-size-24);
   grid-template-areas: '. . .';
 `

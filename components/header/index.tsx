@@ -23,6 +23,11 @@ const Logo = styled.span`
   width: 17px;
   height: 17px;
   background: url(assets/plus.svg) no-repeat;
+  margin-top: -2px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 `
 
 const LogoTitle = styled.a`
@@ -31,10 +36,12 @@ const LogoTitle = styled.a`
   color: var(--color-charcoal);
   line-height: var(--px-size-16);
   margin-left: var(--px-size-32);
+  margin-top: var(--px-size-1);
 
   @media (min-width: 768px) {
     font-size: var(--rem-size-1-5);
     margin-left: calc(14.097222222222221% + var(--px-size-24));
+    margin-top: 0;
   }
 `
 
