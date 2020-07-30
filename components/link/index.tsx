@@ -15,8 +15,8 @@ type LinkProps = {
  * )
  */
 const Link = styled.a<LinkProps>`
-
   --align: ${(props: LinkProps) => (props.align ? props.align : 'left')};
+
   text-transform: uppercase;
   text-decoration: none;
   font-size: var(--rem-sie-0-75);

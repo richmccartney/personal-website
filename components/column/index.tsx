@@ -36,11 +36,14 @@ type ColumnProps = {
  * )
  */
 const Col = styled.div<ColumnProps>`
-
   --column: ${(props) => props.column};
+
   --start: ${(props) => props.start};
+
   --order: ${(props) => props.order};
+
   --align: ${(props) => props.align};
+
   grid-column: var(--start) / var(--column) span;
   order: var(--order);
   text-align: var(--align);
