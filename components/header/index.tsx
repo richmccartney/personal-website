@@ -9,8 +9,10 @@ interface ToggleProps {
 const Container = styled.header`
   display: flex;
   align-items: center;
-  grid-column-start: 2;
+  grid-column: 1 / span 3;
+  margin: 0 auto;
   width: 100%;
+  max-width: 1680px;
   padding: var(--px-size-16) 0;
   border-bottom: 1px solid var(--color-lighter-grey);
 
@@ -40,7 +42,7 @@ const LogoTitle = styled.a`
 
   @media (min-width: 768px) {
     font-size: var(--rem-size-1-5);
-    margin-left: calc(14.097222222222221% + var(--px-size-24));
+    margin-left: calc(14.097222222222221% + var(--spacing-md));
     margin-top: 0;
   }
 `
@@ -55,7 +57,7 @@ const Nav = styled.nav<ToggleProps>`
   left: 0;
   display: ${(props) => (props.toggle ? 'flex' : 'none')};
   flex-direction: column;
-  padding: 0 var(--px-size-24);
+  padding: 0 var(--spacing-md);
 
   @media (min-width: 768px) {
     position: relative;

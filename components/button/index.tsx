@@ -64,6 +64,7 @@ const Button: FunctionComponent<ButtonProps> = forwardRef(function Button(
     tabIndex,
     target,
     type = 'button',
+    ...props
   },
   ref
 ) {
@@ -78,7 +79,11 @@ const Button: FunctionComponent<ButtonProps> = forwardRef(function Button(
       ? { disabled, role, type, ...commonAttrs }
       : { download, href, hrefLang, rel, target, ...commonAttrs }
 
-  return <Component {...attrs}>{children}</Component>
+  return (
+    <Component {...attrs} {...props}>
+      {children}
+    </Component>
+  )
 })
 
 export default Button

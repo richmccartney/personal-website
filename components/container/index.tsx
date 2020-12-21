@@ -7,8 +7,8 @@ type ContainerProps = {
 const Container = styled('div')<ContainerProps>(
   {
     display: 'grid',
-    gridTemplateColumns: 'repeat(12, [col] 1fr)',
-    gridColumnGap: 'var(--px-size-24)',
+    gridTemplateColumns: 'repeat(var(--grid-max-columns), [col] 1fr)',
+    gridColumnGap: 'var(--grid-column-gap)',
     width: '100%',
   },
   (props) => ({
